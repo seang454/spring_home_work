@@ -38,7 +38,7 @@ public class StudentService {
         if (student != null) {
             for (int i=0;i<students.size();i++) {
                 if (students.contains(student)) {
-                    students.set(i, newStudent);
+                    students.set(id-1, newStudent);
                 }
             }
             System.out.println("Student updated: " + student + " successfully");
